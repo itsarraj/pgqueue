@@ -6,7 +6,22 @@ of others exist but nothing anyone reaches for by default). If your app
 already has a `PgPool`, this needs nothing else — no Redis, no separate
 broker process.
 
-## The idea
+## Installation
+
+Add to your `Cargo.toml`:
+
+```toml
+[dependencies]
+pgqueue = "0.1"
+```
+
+Or install the CLI/dashboard binary:
+
+```sh
+cargo install --path .
+```
+
+## Usage
 
 Embed the library in your own app:
 
